@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getAluno, updateAluno } from '../api/alunos';
+import { Button } from 'react-bootstrap';
 import toast from 'react-hot-toast';
 
 const EditarAluno = () => {

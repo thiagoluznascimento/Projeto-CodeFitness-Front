@@ -32,6 +32,7 @@ const NovoTreino = () => {
       </div>
       <div>
         <label htmlFor=""></label>
+        <input type="text" />
       </div>
     </form>
   );

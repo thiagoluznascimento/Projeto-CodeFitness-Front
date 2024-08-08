@@ -20,7 +20,7 @@ const NovoAluno = () => {
 
   return (
     <main>
-      <h1>Editar Aluno</h1>
+      <h1>Adcionar Aluno</h1>
       <hr />
       <form onSubmit={handleSubmit(salvarAluno)}>
         <div>
@@ -120,7 +120,7 @@ const NovoAluno = () => {
           )}
         </div>
         <Button className="mt-3" type="submit">
-          Editar
+          Adicionar
         </Button>
       </form>
     </main>
