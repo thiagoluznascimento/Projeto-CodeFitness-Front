@@ -10,7 +10,6 @@ export async function deleteTreino(id) {
     return response.data;
 }
 
-
 export async function addTreino(data) {
     const response = await axios.post("http://localhost:3000/treinos", data);
     return response.data;

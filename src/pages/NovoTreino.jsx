@@ -13,18 +13,17 @@ const NovoTreino = () => {
   const navigate = useNavigate();
 
   const [alunos, setAlunos] = useState([]);
-
-  function salvarTreino(data) {
-    addTreino(data).then((res) => {
-      console.log(data);
-      toast.success(res.message);
-      navigate("/treinos");
-    })
-  }
-
+  
   function carregarAlunos() {
     getAlunos().then((dados) => {
       setAlunos(dados);
+    })
+  }
+
+  function salvarTreino(data) {
+    addTreino(data).then((res) => {
+      toast.success(res.message);
+      navigate("/treinos");
     })
   }
 
@@ -37,9 +36,15 @@ const NovoTreino = () => {
       <h1>Adicionar Treino</h1>
       <hr />
       <form onSubmit={handleSubmit(salvarTreino)}>
-        <div>
+      <div>
           <label htmlFor="tipo">Tipo do Treino</label>
-          <input type="text" className="form-control" id="tipo"/>
+          <select className="form-select">
+            <option value="cardio">Cardio</option>
+            <option value="musculacao">Musculação</option>
+            <option value="hiit">HIIT</option>
+            <option value="yoga">Yoga</option>
+            <option value="pilates">Pilates</option>
+          </select>
           {errors.tipo && (<small className="text-danger">Esse campo é obrigatório!</small>)}
         </div>
         <div>
@@ -50,16 +55,16 @@ const NovoTreino = () => {
         <div>
           <label htmlFor="alunoId">Aluno</label>
           <select className="form-select" {...register("alunoId", { required: true, valueAsNumber: true })}>
-          <option value="">Selecione um aluno</option>
-          {
-            alunos.map((aluno) => {
-              return(
-                <option key={aluno.id} value={aluno.id}>
-                  {aluno.nome} 
-                </option>
-              );
-            })
-          }
+            <option value="">Selecione um aluno</option>
+            {
+              alunos.map((aluno) => {
+                return (
+                  <option key={aluno.id} value={aluno.id}>
+                    {aluno.nome}
+                  </option>
+                );
+              })
+            }
           </select>
 
         </div>
