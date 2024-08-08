@@ -5,12 +5,12 @@ export async function getAlunos() {
     return response.data;
 }
 
-export async function addAlunos(data) {
+export async function addAluno(data) {
     const response = await axios.post("http://localhost:3000/alunos", data);
     return response.data;
 }
 
-export async function deleteAlunos(id) {
+export async function deleteAluno(id) {
     const response = await axios.delete(`http://localhost:3000/alunos/${id}`);
     return response.data;
 }

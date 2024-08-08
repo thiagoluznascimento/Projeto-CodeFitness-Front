@@ -1,22 +1,34 @@
 import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import { getAluno, updateAluno } from '../api/alunos';
+import toast from 'react-hot-toast';
 
 const EditarAluno = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const navigate = useNavigate();
+  const {id} = useParams();
 
   function atualizarAluno(data) {
-    
+    updateAluno(id, data).then((res) => {
+      toast.success(res.message);
+      navigate("/alunos");
+    }).catch((err) => {
+      toast.error(err.response.data.message);
+    })
   }
 
   function carregarAluno() {
-
+    getAluno(id).then((dados) => {
+      reset(dados);
+    }).catch((err) => {
+      navigate("/alunos");
+    })
   }
 
-  const {id} = useParams();
-
+  
   useEffect(() => {
-
+    carregarAluno();
   }, [])
 
   return (

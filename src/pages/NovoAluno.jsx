@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
+import { addAlunos } from '../api/alunos';
+import toast from 'react-hot-toast';
 
 const NovoAluno = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -7,7 +9,12 @@ const NovoAluno = () => {
   const navigate = useNavigate();
 
   function salvarAluno(data) {
-    
+    addAlunos(data).then((res) => {
+      toast.success(resposta.message);
+      navigate("/alunos");
+    }).catch((err) => {
+      toast.error(err.response.data.message);
+    });
   }
 
   return (

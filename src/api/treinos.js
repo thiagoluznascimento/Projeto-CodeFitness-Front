@@ -10,12 +10,13 @@ export async function deleteTreino(id) {
     return response.data;
 }
 
-export async function addPet(data) {
+
+export async function addTreino(data) {
     const response = await axios.post("http://localhost:3000/treinos", data);
     return response.data;
 }
 
-// Para edição
+// Para a edição de treino
 export async function getTreino(id) {
     const response = await axios.get(`http://localhost:3000/treinos/${id}`);
     return response.data;
