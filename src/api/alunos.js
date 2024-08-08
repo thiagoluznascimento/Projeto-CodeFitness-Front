@@ -16,12 +16,12 @@ export async function deleteAlunos(id) {
 }
 
 // Para editar alunos
-export async function getAlunos(id) {
+export async function getAluno(id) {
     const response = await axios.get(`http://localhost:3000/alunos/${$id}`);
     return response.data;
 }
 
-export async function getAlunos(id, data) {
+export async function updateAluno(id, data) {
     const response = await axios.put(`http://localhost:3000/alunos/${$id}`, data);
     return response.data;
 }
