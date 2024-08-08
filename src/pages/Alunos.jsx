@@ -26,12 +26,12 @@ function Alunos() {
 
   useEffect(() => {
     carregarAlunos();
-  })
+  }, []);
 
   return (
     <main className="mt-4 container">
       <h1>Alunos</h1>
-      <Button as={link} to="/alunos/novo">
+      <Button as={Link} to="/alunos/novo">
         Adicionar Aluno
       </Button>
       <hr />
