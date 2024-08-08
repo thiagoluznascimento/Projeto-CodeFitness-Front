@@ -1,11 +1,27 @@
 import axios from "axios";
 
-export async function getAlunos(params) {
+export async function getAlunos() {
     const response = await axios.get("http://localhost:3000/alunos");
     return response.data;
 }
 
 export async function addAlunos(data) {
     const response = await axios.post("http://localhost:3000/alunos", data);
+    return response.data;
+}
+
+export async function deleteAlunos(id) {
+    const response = await axios.delete(`http://localhost:3000/alunos/${id}`);
+    return response.data;
+}
+
+// Para editar alunos
+export async function getAlunos(id) {
+    const response = await axios.get(`http://localhost:3000/alunos/${$id}`);
+    return response.data;
+}
+
+export async function getAlunos(id, data) {
+    const response = await axios.put(`http://localhost:3000/alunos/${$id}`, data);
     return response.data;
 }
