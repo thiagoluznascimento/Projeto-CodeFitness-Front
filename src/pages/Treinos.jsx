@@ -38,10 +38,10 @@ function Treinos() {
       {treinos ? (
         <Table>
           <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Exercícios</th>
+            <tr >
               <th>Aluno</th>
+              <th>Treino</th>
+              <th>Exercícios</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -49,9 +49,9 @@ function Treinos() {
             {treinos.map((treino) => {
               return (
                 <tr key={treino.id}>
+                  <td>{treino.aluno.nome}</td>
                   <td>{treino.tipo}</td>
                   <td>{treino.exercicios}</td>
-                  <td>{treino.aluno.nome}</td>
                   <td>
                     <Button className="m-1" variant="danger" size="sm" onClick={() => deletarTreino(treino.id)}>
                       Excluir
