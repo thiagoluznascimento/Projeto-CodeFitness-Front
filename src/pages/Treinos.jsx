@@ -41,6 +41,7 @@ function Treinos() {
             <tr>
               <th>Tipo</th>
               <th>Exercícios</th>
+              <th>Aluno</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -50,6 +51,7 @@ function Treinos() {
                 <tr key={treino.id}>
                   <td>{treino.tipo}</td>
                   <td>{treino.exercicios}</td>
+                  <td>{treino.aluno.nome}</td>
                   <td>
                     <Button className="m-1" variant="danger" size="sm" onClick={() => deletarTreino(treino.id)}>
                       Excluir
