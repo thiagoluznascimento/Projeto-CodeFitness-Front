@@ -24,6 +24,7 @@ const EditarTreino = () => {
   function carregarTreino() {
     getTreino(id).then((dados) => {
       reset(dados);
+      console.log(dados);
     }).catch((err) => {
       navigate("/treinos");
     })
@@ -41,11 +42,11 @@ const EditarTreino = () => {
         <div>
           <label htmlFor="tipo">Tipo do Treino</label>
           <select className="form-select" {...register("tipo", {required:true})}>
-            <option value="cardio">Cardio</option>
-            <option value="musculacao">Musculação</option>
-            <option value="hiit">HIIT</option>
-            <option value="yoga">Yoga</option>
-            <option value="pilates">Pilates</option>
+            <option value="Cardio">Cardio</option>
+            <option value="Musculação">Musculação</option>
+            <option value="HIIT">HIIT</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Pilates">Pilates</option>
           </select>
           {errors.tipo && (<small className="text-danger">Esse campo é obrigatório!</small>)}
         </div>
