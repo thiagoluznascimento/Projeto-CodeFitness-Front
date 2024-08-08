@@ -33,7 +33,7 @@ const EditarAluno = () => {
   }, [])
 
   return (
-    <main>
+    <main className='mt-4 container'>
       <h1>Editar Aluno</h1>
       <hr />
       <form onSubmit={handleSubmit(atualizarAluno)}>

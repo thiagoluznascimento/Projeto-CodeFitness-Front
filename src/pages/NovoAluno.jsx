@@ -11,7 +11,7 @@ const NovoAluno = () => {
 
   function salvarAluno(data) {
     addAluno(data).then((res) => {
-      toast.success(resposta.message);
+      toast.success(res.message);
       navigate("/alunos");
     }).catch((err) => {
       toast.error(err.response.data.message);
@@ -19,8 +19,8 @@ const NovoAluno = () => {
   }
 
   return (
-    <main>
-      <h1>Adcionar Aluno</h1>
+    <main className='mt-4 container'>
+      <h1>Adicionar Aluno</h1>
       <hr />
       <form onSubmit={handleSubmit(salvarAluno)}>
         <div>
