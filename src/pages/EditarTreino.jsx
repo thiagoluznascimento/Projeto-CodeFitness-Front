@@ -40,7 +40,7 @@ const EditarTreino = () => {
       <form onSubmit={handleSubmit(atualizarTreino)}>
         <div>
           <label htmlFor="tipo">Tipo do Treino</label>
-          <select className="form-select">
+          <select className="form-select" {...register("tipo", {required:true})}>
             <option value="cardio">Cardio</option>
             <option value="musculacao">Musculação</option>
             <option value="hiit">HIIT</option>
