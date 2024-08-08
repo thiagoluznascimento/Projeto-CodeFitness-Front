@@ -25,7 +25,7 @@ const EditarTreino = () => {
     getTreino(id).then((dados) => {
       reset(dados);
     }).catch((err) => {
-      navigate("treinos");
+      navigate("/treinos");
     })
   }
 
