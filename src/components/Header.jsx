@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import  logo  from "./../assets/Logocodefitness.png"
 function Header() {
   return (
-    <header className="header w-100 px-3 py-2">
+    <header style={{ minWidth: '100px' }} className="header w-100 px-3 py-2 m-0">
       <nav className="container d-flex justify-content-between align-items-center">
         <Link to="/">
           <img src={logo} alt="CodeFitNess" />

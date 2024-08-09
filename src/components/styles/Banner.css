@@ -1,0 +1,55 @@
+.container-banner {
+    position: relative;
+    width: auto;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    height: 400px;
+}
+
+.fundo-img {
+    color: azure;
+    width: auto;
+    height: 100%;
+    background: url(/src/assets/img1.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card-banner {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #0e2141bb;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h2-banner{
+    color:  #b1e052;
+}
+
+.bttn {
+    transition-duration: 0.6s;
+    background-color: #9cc649;
+    color: black;
+    border-radius: 10px;
+    padding: 14px 60px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.bttn:hover {
+    color: white;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+/* #0E2141
+verde:
+#9cc649 */
