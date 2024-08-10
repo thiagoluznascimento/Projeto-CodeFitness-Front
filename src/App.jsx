@@ -9,6 +9,9 @@ import EditarTreino from "./pages/EditarTreino";
 import Treinos from "./pages/Treinos";
 import NovoTreino from "./pages/NovoTreino";
 import NotFound from "./pages/NotFound";
+import PoliticasPrivacidade from "./pages/PoliticasPrivacidade";
+import Footer from "./components/Footer";
+import { SaibaMais } from "./pages/SaibaMais";
 
 function App() {
   return (
@@ -23,8 +26,11 @@ function App() {
           <Route path="/treinos" element={<Treinos/>} />
           <Route path="/treinos/novo" element={<NovoTreino/>} />
           <Route path="/treinos/editar/:id" element={<EditarTreino/>} />
+          <Route path="/saibamais" element={<SaibaMais/>}/>
+          <Route path="/politicasprivacidade" element={<PoliticasPrivacidade />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer nomeAutor = "CodeFitness" />
     </BrowserRouter>
     <Toaster position="bottom-right" />
     </>

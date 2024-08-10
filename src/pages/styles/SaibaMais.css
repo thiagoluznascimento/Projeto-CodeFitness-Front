@@ -1,0 +1,19 @@
+/* Certifique-se de que o fundo da página também é azul para contraste */
+
+.cd-saiba-mais {
+    border: 1px solid white !important; /* Adiciona uma borda branca ao redor do Card */
+}
+
+.cd-header {
+    color: white !important; /* Cor do texto do Header */
+    border: 1px solid white !important;
+}
+
+.cd-title {
+    color: white !important; /* Cor do título dentro do Card */
+}
+
+.cd-text {
+    color: white; /* Cor do texto principal dentro do Card */
+}
+

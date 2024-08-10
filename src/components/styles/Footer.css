@@ -1,0 +1,14 @@
+/* Adicione essas regras ao seu arquivo CSS do Footer */
+
+footer {
+    position: fixed; /* Fixa o footer na tela */
+    bottom: 0; /* Coloca o footer na parte inferior da tela */
+    left: 0; /* Alinha o footer à esquerda da tela */
+    background-color: #0E2141;
+    color: white;
+    text-align: center;
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    height: 55px; /* Altura do footer */
+    width: 100%; /* Faz com que o footer ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+}

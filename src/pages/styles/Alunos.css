@@ -1,0 +1,17 @@
+.table-custom {
+  background-color: #0E2141; /* Cor de fundo da tabela */
+  color: white; /* Cor do texto */
+}
+
+.table-custom thead th {
+  background-color: #0E2141; /* Cor de fundo dos cabeçalhos */
+  color: white; /* Cor do texto dos cabeçalhos */
+}
+
+.table-custom tbody tr:nth-of-type(even) {
+  background-color: #1a2a4d; /* Cor de fundo das linhas pares, se desejar */
+}
+
+.table-custom tbody tr:nth-of-type(odd) {
+  background-color: #0E2141; /* Cor de fundo das linhas ímpares */
+}

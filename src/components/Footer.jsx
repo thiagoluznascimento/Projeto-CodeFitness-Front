@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+import "./styles/Footer.css"
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className='footer'>Footer</div>
+    <footer className="footer">
+      ©2024 CodeFitness | Todos os direitos reservados.
+      <small> <br /> Desenvolvido por: {props.nomeAutor}</small>
+      <Link className="politicas" to="/politicasprivacidade"> Políticas de privacidade </Link>
+    </footer>
   )
 }
 

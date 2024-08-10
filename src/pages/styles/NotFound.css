@@ -1,8 +1,8 @@
-img {
-    width: 100%;
+.card {
+    background-color: #0E2141 !important;
 }
-
-main {
-    background-color: #0E2141;
-    height: 100vh;
+.card-img {
+    width: 50% !important;
+    height: auto;
+    margin: 0 auto;
 }

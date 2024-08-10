@@ -26,7 +26,6 @@ const Home = () => {
           <h2 className="mb-5">PRINCIPAIS RECURSOS</h2>
           <div className="card-corpo">{cardsRecursos}</div>
         </div>
-        <Footer />
       </main>
     </>
   )
