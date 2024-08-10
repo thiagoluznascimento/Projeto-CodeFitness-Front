@@ -8,6 +8,7 @@ import EditarAluno from "./pages/EditarAluno";
 import EditarTreino from "./pages/EditarTreino";
 import Treinos from "./pages/Treinos";
 import NovoTreino from "./pages/NovoTreino";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/treinos" element={<Treinos/>} />
           <Route path="/treinos/novo" element={<NovoTreino/>} />
           <Route path="/treinos/editar/:id" element={<EditarTreino/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
     </BrowserRouter>
     <Toaster position="bottom-right" />
