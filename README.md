@@ -14,7 +14,6 @@ A CodeFitness é uma empresa fictícia para a apresentação de projeto da ativi
 - A estrutura de arquivos e diretórios deve seguir os padrões solicitados em aula.
 
 ## Comandos para rodar o projeto
-- npm install 
 - npm install node
 - npm install
 - npm run dev
