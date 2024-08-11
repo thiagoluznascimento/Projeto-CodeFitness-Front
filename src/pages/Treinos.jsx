@@ -32,7 +32,7 @@ function Treinos() {
   return (
     <main className="mt-4 container">
       <h1>Treinos</h1>
-      <Button as={Link} to="/treinos/novo">
+      <Button className="botao" as={Link} to="/treinos/novo">
         Adicionar Treino
       </Button>
       <hr />

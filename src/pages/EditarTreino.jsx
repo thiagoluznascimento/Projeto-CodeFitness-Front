@@ -55,7 +55,7 @@ const EditarTreino = () => {
           <input type="text" className="form-control" {...register("exercicios", { required: true, maxLength: 200 })} />
           {errors.exercicios && (<small className="text-danger">Esse campo é obrigatório!</small>)}
         </div>
-        <Button className="mt-3" type="submit">
+        <Button className="mt-3 botao" type="submit">
           Atualizar
         </Button>
       </form>

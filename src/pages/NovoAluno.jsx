@@ -119,7 +119,7 @@ const NovoAluno = () => {
             <small className="text-danger">O número é inválido!</small>
           )}
         </div>
-        <Button className="mt-3" type="submit">
+        <Button className="mt-3 botao" type="submit">
           Adicionar
         </Button>
       </form>

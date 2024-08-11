@@ -30,3 +30,12 @@ body {
 .header nav a:hover {
     color: #ded7d1;
 }
+
+.botao{
+    background-color: #b1e052;
+    color: black;
+}
+
+.botao:hover{
+    background-color: #b1e052;
+}

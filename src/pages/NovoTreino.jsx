@@ -69,7 +69,7 @@ const NovoTreino = () => {
           </select>
 
         </div>
-        <Button className="mt-3" type="submit">
+        <Button className="mt-3 botao" type="submit">
           Adicionar
         </Button>
       </form>
