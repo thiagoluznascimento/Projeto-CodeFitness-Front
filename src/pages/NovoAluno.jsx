@@ -19,7 +19,7 @@ const NovoAluno = () => {
   }
 
   return (
-    <main className='mt-4 container'>
+    <main className='mt-4 container' style={{minHeight:"100vh"}}>
       <h1>Adicionar Aluno</h1>
       <hr />
       <form onSubmit={handleSubmit(salvarAluno)}>

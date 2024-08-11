@@ -1,0 +1,24 @@
+.table-custom {
+    background-color: #0E2141;
+    /* Cor de fundo da tabela */
+    color: white;
+    /* Cor do texto */
+}
+
+.table-custom th{
+    font-size: 1.5rem;
+}
+
+.table-custom thead th {
+    background-color: #0E2141;
+    /* Cor de fundo dos cabeçalhos */
+    color: white;
+    /* Cor do texto dos cabeçalhos */
+}
+
+.table-custom tbody td {
+    background-color: #0E2141;
+    /* Cor de fundo dos cabeçalhos */
+    color: white;
+    /* Cor do texto dos cabeçalhos */
+}

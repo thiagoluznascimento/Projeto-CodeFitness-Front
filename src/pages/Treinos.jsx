@@ -4,6 +4,7 @@ import { deleteTreino, getTreinos } from "../api/treinos";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import toast from "react-hot-toast";
+import "./styles/Treinos.css";
 
 function Treinos() {
   const [treinos, setTreinos] = useState([]);
@@ -16,7 +17,7 @@ function Treinos() {
 
   function deletarTreino(id) {
     const deletar = confirm("Tem certeza que deseja excluir?");
-    if(deletar) {
+    if (deletar) {
       deleteTreino(id).then((resposta) => {
         toast.success(resposta.message);
         carregarTreinos();
@@ -36,9 +37,9 @@ function Treinos() {
       </Button>
       <hr />
       {treinos ? (
-        <Table>
+        <Table className="table-custom">
           <thead>
-            <tr >
+            <tr>
               <th>Aluno</th>
               <th>Treino</th>
               <th>Exercícios</th>
@@ -53,11 +54,15 @@ function Treinos() {
                   <td>{treino.tipo}</td>
                   <td>{treino.exercicios}</td>
                   <td>
-                    <Button className="m-1" variant="danger" size="sm" onClick={() => deletarTreino(treino.id)}>
-                      Excluir
+                    <Button className="m-1" variant="outline-danger" size="sm" onClick={() => deletarTreino(treino.id)}>
+                      <span class="material-symbols-outlined">
+                        delete
+                      </span>
                     </Button>
-                    <Button size="sm" as={Link} to={`/treinos/editar/${treino.id}`}>
-                      Editar
+                    <Button size="sm" variant="outline-primary" as={Link} to={`/treinos/editar/${treino.id}`}>
+                      <span class="material-symbols-outlined">
+                        edit
+                      </span>
                     </Button>
                   </td>
                 </tr>
