@@ -35,7 +35,7 @@ const EditarTreino = () => {
   }, []);
 
   return (
-    <main className='mt-4 container'>
+    <main className="mt-4 container" style={{ width: '80%', height: '500px' }}>
       <h1>Atualizar Treino</h1>
       <hr />
       <form onSubmit={handleSubmit(atualizarTreino)}>

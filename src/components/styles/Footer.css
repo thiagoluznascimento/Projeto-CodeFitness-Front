@@ -7,26 +7,21 @@
     align-items: center;
     color: black;
     font-size: 1.1rem;
-    /* Fixa o footer na tela */
+    position: relative;
     bottom: 0;
-    /* Coloca o footer na parte inferior da tela */
-    left: 0;
-    /* Alinha o footer à esquerda da tela */
     background-color: #9cc649de;
     text-align: center;
     padding: 10px;
-    /* Ajuste o padding conforme necessário */
-    height: 105px;
-    /* Altura do footer */
+    height: 80px;
     width: 100%;
-    /* Faz com que o footer ocupe toda a largura da tela */
-    z-index: 1000;
-    /* Garante que o footer fique acima de outros elementos */
+    margin-top: 10px;
+
 }
 
 .politicas{
     text-decoration: none;
     color: #0e2141;
+    font-size: 15px;
 }
 .politicas:hover{
     color: aliceblue;

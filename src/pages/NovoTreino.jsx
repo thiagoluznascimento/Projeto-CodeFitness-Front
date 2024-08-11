@@ -33,13 +33,14 @@ const NovoTreino = () => {
   }, [])
 
   return (
-    <main className='mt-4 container'>
+    <main className='mt-4 container' style={{ width: '80%', height: '500px' }}>
       <h1>Adicionar Treino</h1>
       <hr />
       <form onSubmit={handleSubmit(salvarTreino)}>
       <div>
           <label htmlFor="tipo">Tipo do Treino</label>
           <select className="form-select" {...register("tipo", {required:true})}>
+            <option selected disabled>Selecione um treino</option>
             <option value="Cardio">Cardio</option>
             <option value="Musculação">Musculação</option>
             <option value="HIIT">HIIT</option>
