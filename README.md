@@ -15,13 +15,12 @@ A CodeFitness é uma empresa fictícia para a apresentação de projeto da ativi
 
 ## Comandos para rodar o projeto
 - npm install 
-- npm install cors
 - npm install node
 - npm install
 - npm run dev
 
 ## Repositório com o Back-end deste projeto
-[Projeto CodeFitness](https://github.com/gicellyn/Projeto-CodeFitness)
+[Projeto CodeFitness back-end](https://github.com/gicellyn/Projeto-CodeFitness)
 
 ## Considerações finais
 Concluímos com sucesso essa segunda etapa e finalização do projeto. Que não apenas aprimorou nossas habilidades técnicas, mas também fortaleceu significativamente a dinâmica de nossa equipe. Ao longo deste projeto, [Thiago Luz](https://github.com/thiagoluznascimento), [Gicelly Nayara](https://github.com/gicellyn) e [Guilherme Candini](https://github.com/GuiCandini), trabalhamos em conjunto para alcançar nossos objetivos e entregar um projeto de qualidade.
