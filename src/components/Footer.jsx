@@ -5,7 +5,10 @@ const Footer = (props) => {
   return (
     <footer className="footer">
       ©2024 CodeFitness | Todos os direitos reservados.
-      <small> <br /> Desenvolvido por: {props.nomeAutor}</small>
+      <small> Desenvolvido por: {props.nomeAutor}</small>
+      <div>
+        
+      </div>
       <Link className="politicas" to="/politicasprivacidade"> Políticas de privacidade </Link>
     </footer>
   )

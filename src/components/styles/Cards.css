@@ -2,12 +2,13 @@
     background-color: transparent;
     color: white;
     border: 1px solid #51534d;
+    
 }
 
 #card-img {
     width: 100px;
     background-color: #9cc649;
     border-radius: 100px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 8px;
 }
